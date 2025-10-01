@@ -23,9 +23,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center space-y-8 mt-20">
       <h1 className="text-5xl font-extrabold text-green-400">{serverIP}</h1>
-
       <ServerCard serverIP={serverIP} status={status} />
-
       <div className="flex space-x-6 mt-4">
         <motion.a
           href={`minecraft://connect/${serverIP}`}
@@ -35,7 +33,6 @@ export default function Home() {
         >
           Sunucuya Bağlan
         </motion.a>
-
         <motion.a
           href="https://discord.gg/xxxx"
           target="_blank"
