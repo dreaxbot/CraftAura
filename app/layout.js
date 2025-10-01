@@ -10,21 +10,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="tr">
       <body className="bg-gray-900 text-white font-sans relative">
-        {/* Arka Plan GIF */}
         <div 
           className="fixed inset-0 -z-10 w-full h-full bg-cover bg-center"
           style={{ backgroundImage: "url('/galaxy.gif')" }}
         />
-
-        {/* Navbar */}
         <Navbar />
-
-        {/* Sayfa İçeriği */}
         <main className="relative z-10 min-h-screen p-6 flex flex-col items-center">
           {children}
         </main>
-
-        {/* Footer */}
         <Footer />
       </body>
     </html>
