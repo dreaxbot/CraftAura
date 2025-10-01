@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function ServerCard({ serverIP, status }) {
   return (
     <motion.div
-      initial={{ scale: 0.8, opacity: 0 }}
+      initial={{ scale: 0.9, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       whileHover={{ scale: 1.05, boxShadow: "0 0 30px #00ff99" }}
       transition={{ duration: 0.5 }}
@@ -13,7 +13,7 @@ export default function ServerCard({ serverIP, status }) {
       {status ? (
         <>
           <motion.p
-            animate={{ scale: status.online ? [1, 1.1, 1] : 1 }}
+            animate={{ scale: status.online ? [1, 1.05, 1] : 1 }}
             transition={{ repeat: Infinity, duration: 1.5 }}
             className={`text-2xl font-bold mb-4 ${
               status.online ? "text-green-400" : "text-red-500"
