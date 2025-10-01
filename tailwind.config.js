@@ -1,16 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}"
   ],
   theme: {
-    extend: {
-      colors: {
-        mcgreen: "#3C8527", // Minecraft yeşili
-      },
-    },
+    extend: {},
   },
   plugins: [],
-};
-
+}
