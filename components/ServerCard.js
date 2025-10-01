@@ -6,8 +6,9 @@ export default function ServerCard({ serverIP, status }) {
     <motion.div
       initial={{ scale: 0.8, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 1 }}
-      className="bg-gray-800 p-8 rounded-3xl shadow-2xl w-96 hover:shadow-green-500 transition-shadow"
+      whileHover={{ scale: 1.05, boxShadow: "0 0 30px #00ff99" }}
+      transition={{ duration: 0.5 }}
+      className="bg-gray-800/70 backdrop-blur-md p-8 rounded-3xl shadow-2xl w-96 border border-green-400 text-center"
     >
       {status ? (
         <>
@@ -32,4 +33,3 @@ export default function ServerCard({ serverIP, status }) {
     </motion.div>
   );
 }
-
