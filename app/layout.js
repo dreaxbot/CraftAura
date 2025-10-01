@@ -5,7 +5,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="tr">
       <body className="bg-gray-900 text-white font-sans relative">
-        {/* Arka plan GIF */}
         <div
           className="fixed inset-0 -z-10 w-full h-full bg-cover bg-center"
           style={{ backgroundImage: "url('/images/galaxy.gif')" }}
