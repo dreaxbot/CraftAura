@@ -2,7 +2,6 @@
   "name": "minecraft-site",
   "version": "1.0.0",
   "private": true,
-  "description": "Minecraft sunucu durum sitesi",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
